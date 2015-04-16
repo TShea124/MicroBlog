@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel = "stylesheet" href = "/public/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title> <%= micropost.title %></title>
+</head>
+<body>
+<% include header %>
+<div>
+  <h3><%= micropost.title %></h3> </a>
+  <img src="<%= micropost.image %>">
+  <p> <%= micropost.body %></p> 
+  <a href="/micropost/<%= micropost.id %>/edit">Edit This Post</a>
+  <br />
+  <br>
+  <form action="/micropost/<%= micropost.id %>?_method=DELETE" method="POST">
+  <button>DELETE POST</button>
+  </form>
+</div>
+</body>
+</html> 

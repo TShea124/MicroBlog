@@ -1,0 +1,13 @@
+form {
+	text-align: center;
+}
+
+div {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 450px;
+}

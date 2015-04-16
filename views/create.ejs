@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel = "stylesheet" href = "/public/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title> Create MicroPost </title>
+</head>
+<body>
+<% include header %>
+<form action="/microposts" method="POST">
+<h2> Creating a New Post is Easy: </h2>
+<h3> Artist-Title: </h3>
+<input type="text" name="title" placeholder="Artist-Title" required>
+<h3> Author: </h3>
+<input type="text" name="author" placeholder="Author" required>	 
+<h3> Body: </h3>
+<textarea name="body" cols="30" rows="8" placeholder="Write something about your post..." required></textarea>
+<h3> Image URL: </h3>
+<input type="text" name="image" placeholder="Image_URL" required>
+<br />
+<br>
+<button> Submit </button>
+</form>
+</body>
+</html>
