@@ -73,9 +73,33 @@ app.get("/micropost/:id/edit", function (req, res) {
 	});
 });
 
+// Show Post-Authors Page
+app.get("/microposts/postauthors", function (req, res) {
+	db.all("SELECT * FROM postauthors;", function (err, data) {
+		if (err) {
+			console.log(err);
+		} else {
+			console.log(data);
+		}
+		res.render("authors.ejs", {postauthors: data});
+	});	
+});
+
+// Show Topics & #Hashtags Page
+app.get("/microposts/topics&hashtags", function (req, res) {
+	db.all("SELECT * FROM microposts;", function (err, data) {
+		if (err) {
+			console.log(err);
+		} else {
+			console.log(data);
+		}
+		res.render("tags.ejs", {microposts: data});
+	});
+});
+
 // Create a New Post
 app.post("/microposts", function (req, res) {
-	db.run("INSERT INTO microposts (title, author, body, image) VALUES (?, ?, ?, ?);", req.body.title, req.body.author, req.body.body, req.body.image, function (err) {
+	db.run("INSERT INTO microposts (title, author, body, image, tags) VALUES (?, ?, ?, ?, ?);", req.body.title, req.body.author, req.body.body, req.body.image, req.body.tags, function (err) {
 		if (err) {
 			console.log(err);
 		} else {
@@ -87,7 +111,7 @@ app.post("/microposts", function (req, res) {
 
 // Update a Post
 app.put("/microposts/update/:id", function (req, res) {
-	db.run("UPDATE microposts SET title = ?, author = ?, body = ?, image = ? WHERE id = ?;", req.body.title, req.body.author, req.body.body, req.body.image, req.params.id, function (err) {
+	db.run("UPDATE microposts SET title = ?, author = ?, body = ?, image = ?, tags = ? WHERE id = ?;", req.body.title, req.body.author, req.body.body, req.body.image, req.body.tags, req.params.id, function (err) {
 		if (err) {
 			console.log(err);
 		} else {

@@ -9,9 +9,12 @@
 <body>
 <% include header %>
 <div>
-  <h3><%= micropost.title %></h3> </a>
+  <h3><%= micropost.title %></h3>
   <img src="<%= micropost.image %>">
-  <p> <%= micropost.body %></p> 
+  <p> <%= micropost.body %></p>
+  <ul>
+  <li> <%= micropost.tags %></li>
+  </ul> 
   <a href="/micropost/<%= micropost.id %>/edit">Edit This Post</a>
   <br />
   <br>

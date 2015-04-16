@@ -11,3 +11,13 @@ div {
 img {
 	max-width: 450px;
 }
+
+h4 {
+	font-family: 'Rock Salt', cursive;
+    font-size: 1.75em;
+    padding: 0px 35px 0px 35px;
+}
+
+h2 {
+	text-align: center;
+}
