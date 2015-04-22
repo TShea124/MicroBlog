@@ -11,6 +11,7 @@
 <% microposts.forEach( function(micropost) { %>
 <div>
   <a href="/micropost/<%= micropost.id %>"><h3><%= micropost.title %></h3> </a>
+  <h5> Article By: <%= micropost.author %> </h5>
   <img src="<%= micropost.image %>">
   <p> <%= micropost.body %></p>
   <ul>

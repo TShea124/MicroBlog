@@ -8,20 +8,16 @@
 </head>
 <body>
 <% include header %>
-<h2> Choose a Author: </h2>
 <div>
+<h2> Choose a Author: </h2>
 
-<% postauthors.forEach( function(postauthor) { %>
+<% microposts.forEach( function(micropost) { %>
 
-<h4> <%= postauthor.author %> </h4>
+<a href="/micropost/<%= micropost.id %>">
+<h4> <%= micropost.author %> </h4> </a>
 
 <% }); %>
 
 </div>
-</body>
-</html>
-
-
-
 </body>
 </html>

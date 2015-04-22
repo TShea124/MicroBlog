@@ -38,8 +38,8 @@ app.get("/microposts", function (req, res) {
 			console.log(data);
 		}
 		res.render("index.ejs", {microposts: data});
-	});
-});
+      });
+   });
 
 // Show Indiv. Micro Post Page
 app.get("/micropost/:id", function (req, res) {
@@ -75,13 +75,13 @@ app.get("/micropost/:id/edit", function (req, res) {
 
 // Show Post-Authors Page
 app.get("/microposts/postauthors", function (req, res) {
-	db.all("SELECT * FROM postauthors;", function (err, data) {
+	db.all("SELECT * FROM microposts", function (err, data) {
 		if (err) {
 			console.log(err);
 		} else {
 			console.log(data);
 		}
-		res.render("authors.ejs", {postauthors: data});
+		res.render("authors.ejs", {microposts: data});
 	});	
 });
 

@@ -8,8 +8,8 @@
 </head>
 <body>
 <% include header %>
-<h2> Choose a Topic or #Hashtag: </h2>
 <div>
+<h2> Choose a Topic or #Hashtag: </h2>
 <% microposts.forEach( function(micropost) { %>
 <% var array = micropost.tags.split(" "); %>
 <% for (var i = 0; i < array.length; i++) { %>

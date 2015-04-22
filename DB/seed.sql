@@ -3,9 +3,9 @@ INSERT INTO microposts (title, author, body, image, tags) VALUES
 "TommyTuneThumbs",
 "Curren$y won’t be the only one dropping a project on 4/20. Audio Push will also be letting loose their “The Good Vibe Tribe”, which you can peep the art for above.",
 "http://www.howflyhiphop.com/wp-content/uploads/2015/04/audio-push-the-good-vibe-tribe-cover-e1429073855153.jpg",
-"#420 #Audiopush #Reggae"),
+"#Jammin #Audiopush #Reggae"),
 ("DRAKE – MY SIDE",
-"TommyTuneThumbs",
+"Hiphopopotamus",
 "The physical release of Drake’s If You’re Reading This It’s Too Late hits stores on April 21st, and will come with 2 bonus tracks. The first of these is My Side, which you can stream below. What do y’all think",
 "http://www.howflyhiphop.com/wp-content/uploads/2015/04/drake-my-side-mp3-download-e1428978670347.jpg",
 "#Drake #Unreleased #Bonustrack"),
@@ -18,9 +18,22 @@ INSERT INTO microposts (title, author, body, image, tags) VALUES
 "DJ Dave",
 "Curren$y has confirmed that he will be dropping Even More Saturday Night Car Tunes on, you guessed it, 4/20. Peep the artwork above.",
 "http://www.howflyhiphop.com/wp-content/uploads/2015/04/even-more-saturday-night-car-tunes-cover.jpg",
-"#Curren$y #Mixtape #SaturdayNight #420");
+"#Curren$y #Mixtape #SaturdayNight #ElevatorMusic");
 
 INSERT INTO postauthors (author) VALUES
 ("TommyTuneThumbs"),
+("Hiphopopotamus"),
 ("JohnnyJams"),
 ("DJ Dave");
+
+INSERT INTO hashes (hash) VALUES 
+("#Jammin #Audiopush #Reggae"),
+("#Drake #Unreleased #Bonustrack"),
+("#KiDCuDi #Cudder #Heaven"),
+("#Curren$y #Mixtape #SaturdayNight #ElevatorMusic");
+
+INSERT INTO combo (micropost_id, hash_id) VALUES 
+("1","1"),
+("2","1"),
+("3","2"),
+("4","3");

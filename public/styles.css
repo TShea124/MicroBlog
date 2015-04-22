@@ -1,11 +1,23 @@
+body {
+	background-image: url("./HipHop.jpg"); 
+}
+
+
 form {
 	text-align: center;
 }
 
+a {
+color: dodgerblue; 
+}
+
 div {
+	top-margin: 0px;
 	text-align: center;
 	max-width: 600px;
 	margin: 0 auto;
+	background-color: khaki;
+	border-radius: 10px;
 }
 
 img {
@@ -18,6 +30,16 @@ h4 {
     padding: 0px 35px 0px 35px;
 }
 
+h3 {
+	font-size: 1.7em;
+}
+
 h2 {
+	color: crimson;
 	text-align: center;
+}
+
+h5 {
+	font-size: 1em;
+	font-family: "Rock Salt", cursive;
 }
