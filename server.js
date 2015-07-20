@@ -129,7 +129,7 @@ app.delete("/micropost/:id", function (req, res) {
 
 
 
-// Listening on Port 3000
-app.listen(3000, function() {
+// Listening on Port 3001
+app.listen(3001, function() {
 console.log("listening to Port 3000");
 });
