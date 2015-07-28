@@ -7,5 +7,4 @@ This app is a web-based, CRUD application. Specifically it is a Microblog based 
 
 STACK:
 
-  
- 
+Javascript, Express, Node.js 
