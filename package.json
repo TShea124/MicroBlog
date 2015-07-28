@@ -1,7 +1,7 @@
 {
   "name": "MicroBlog",
   "version": "1.0.0",
-  "description": "",
+  "description": "#Project One - Microblog",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +15,14 @@
     "express": "^4.12.3",
     "method-override": "^2.3.2",
     "sqlite3": "^3.0.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TShea124/MicroBlog-Project-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TShea124/MicroBlog-Project-1/issues"
+  },
+  "homepage": "https://github.com/TShea124/MicroBlog-Project-1"
 }
